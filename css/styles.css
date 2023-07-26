@@ -1,0 +1,462 @@
+:root {
+  --main-color: #2e2f42;
+  --text-color: #434455;
+  --logo-btn-color: #4d5ae5;
+  --background-color: #2e2f42;
+  --hover-focus-color: #404bbf;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.conteiner {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* REPETITION STYLE SECTION */
+/* 1=3 */
+.sup-title {
+  color: var(--background-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
+.text-sup-title {
+  color: var(--text-color);
+}
+
+/* 2=3 */
+.section-title {
+  color: var(--background-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+/* =======================ШАПКА======================= */
+
+.main-header {
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
+
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.main-header-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 21px;
+}
+
+.logo {
+  color: var(--background-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.logo-piece {
+  color: var(--logo-btn-color);
+}
+
+.main-nav {
+  font-weight: 500;
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-link-item {
+  color: var(--background-color);
+}
+
+.menu-link-item:hover,
+.menu-link-item:focus {
+  color: var(--hover-focus-color);
+}
+
+.main-adress {
+  font-style: normal;
+}
+
+.adress-link-item:hover,
+.adress-link-item:focus {
+  color: var(--hover-focus-color);
+}
+
+.adress-list {
+  display: flex;
+  align-items: center;
+}
+
+.adress-link-item {
+  color: var(--text-color);
+}
+
+.tel {
+  margin-left: 40px;
+}
+
+/* =======================/ШАПКА======================= */
+
+/* =======================МЕЙН======================= */
+
+/* ========HERO======== */
+
+.hero {
+  background-color: var(--grey, rgba(46, 47, 66, 0.7));
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-img/people-office\ 1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 188px 0;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  text-align: center;
+
+  width: 496px;
+  height: 120px;
+
+  margin-bottom: 48px;
+}
+
+.modal-btn {
+  background-color: var(--logo-btn-color);
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+
+  padding: 16px 32px;
+
+  border-radius: 4px;
+  border: none;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--hover-focus-color);
+}
+
+/* ========/HERO======== */
+
+/* ========SECTION-1======== */
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0;
+}
+.about-list-item {
+  width: 264px;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.section-1-icon-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+
+  margin-bottom: 8px;
+  width: 264px;
+  height: 102px;
+}
+
+.sup-title-conteiner {
+  margin-bottom: 8px;
+}
+
+/* ========/SECTION-1======== */
+
+/* ========SECTION-2======== */
+
+.section-two {
+  padding-bottom: 120px;
+}
+
+.section-two-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.galery-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ========/SECTION-2======== */
+
+/* ========SECTION-3======== */
+
+.section-three {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.section-three-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.employees-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employees-list-item {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.employees-text-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+
+  margin: 32px auto;
+  gap: 8px;
+}
+
+.social-list-icon {
+  display: flex;
+  gap: 24px;
+}
+
+.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-btn-color);
+  border-radius: 50%;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--hover-focus-color);
+}
+
+/* ========/SECTION-3======== */
+
+/* ========SECTION-4======== */
+
+.section-four-conteiner{
+  padding: 120px 0;
+}
+
+.section-four-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+ 
+}
+
+.customers-list{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+
+.customers-link-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:  1px solid  #8E8F99;
+  border-radius: 4px;
+ width: 168px;
+ height: 88px;  
+}
+
+.customers-icon{
+  fill: #8E8F99;
+}
+
+.customers-link-icon:hover,
+.customers-link-icon:focus{
+border-color: var(--hover-focus-color);
+
+}
+
+.customers-icon:hover,
+.customers-icon:focus{
+ fill: #404BBF;
+}
+
+
+
+/* ========/SECTION-4======== */
+
+/* =======================/МЕЙН======================= */
+
+/* =======================ПІДВАЛ======================= */
+
+.footer {
+  background-color: var(--background-color);  
+}
+
+.footer-conteiner{
+  display: flex;
+}
+
+.footer-logo-conteiner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-footer {
+  color: #f4f4fd;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  margin-top: 17.5px;
+  width: 264px;
+  height: 72px;
+}
+
+.footer-icon-conteiner{
+padding: 100px 0  132px 0;
+margin-left: 120px;
+}
+
+.social-media-title{
+  color: #FFF;
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 16px;
+}
+
+.social-media-footer{
+  display: flex;
+  gap: 16px;
+}
+
+.list-social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+
+  background-color: var(--logo-btn-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  
+  }
+
+.list-social-media:hover,
+.list-social-media:focus{
+  background-color: #31D0AA;
+}
+
+.link-social-media{
+  width: 24px;
+  height: 24px;
+}
+
+
+
+/* =======================/ПІДВАЛ======================= */
