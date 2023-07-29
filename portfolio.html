@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Portfolio</title>
-     <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.css"
     />
@@ -56,19 +56,24 @@
 
     <!-- ========МЕЙН-ПОРТФОЛІО======== -->
     <main>
-      <ul>
-        <li>
-          <button>All</button>
+      <div class="conteiner">
+        <!-- /* ___FILTER____ */ -->
+      <ul class="button-list list">
+        <li class="button-list-filter">
+          <button class="button-list-name" type="button">All</button>
         </li>
-        <li><button>Web Site</button></li>
-        <li><button>App</button></li>
-        <li><button>Design</button></li>
-        <li><button>Marketing</button></li>
+        <li class="button-list-filter"><button class="button-list-name" type="button">Web Site</button></li>
+        <li class="button-list-filter"><button class="button-list-name" type="button">App</button></li>
+        <li class="button-list-filter"><button class="button-list-name" type="button">Design</button></li>
+        <li class="button-list-filter"><button class="button-list-name" type="button">Marketing</button></li>
       </ul>
+      <!-- /* ___/FILTER____ */ -->
 
-      <ul>
-        <li>
-          <img
+      <!-- /* ____PORTFOLIO-IMG____ */ -->
+      <div class="portf-list-conteiner">
+      <ul class="portf-list list">
+        <li class="portf-img-list">
+          <img class="portf-img"
             src="./images/portfolio/banking_app_interface_concept.jpg"
             alt="banking_app_interface_concept"
             width="360px"
@@ -77,60 +82,88 @@
           <h3>Banking App Interface Concept</h3>
           <p>App</p>
         </li>
-        <li>
-          <img src="./images/portfolio/cashless_payment.jpg" alt="cashless_payment" width="360px"
-          height="300px" />
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/cashless_payment.jpg"
+            alt="cashless_payment"
+            width="360px"
+            height="300px"
+          />
           <h3>Cashless Payment</h3>
           <p>Marketing</p>
         </li>
-        <li>
-          <img src="./images/portfolio/meditation_app.jpg" alt="meditation_app" />
-          <h3>Meditation App
-           </h3>
-          <p> App</p>
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/meditation_app.jpg"
+            alt="meditation_app"
+          />
+          <h3>Meditation App</h3>
+          <p>App</p>
         </li>
-        <li>
-          <img src="./images/portfolio/taxi_service.jpg" alt="taxi_service" width="360px"
-          height="300px"/>
-          <h3>Taxi Service
-           </h3>
-          <p> Marketing</p>
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/taxi_service.jpg"
+            alt="taxi_service"
+            width="360px"
+            height="300px"
+          />
+          <h3>Taxi Service</h3>
+          <p>Marketing</p>
         </li>
-        <li>
-          <img src="./images/portfolio/screen_illustrations.jpg" alt="screen_illustration"width="360px"
-          height="300px" />
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/screen_illustrations.jpg"
+            alt="screen_illustration"
+            width="360px"
+            height="300px"
+          />
           <h3>Screen Illustrations</h3>
           <p>Design</p>
         </li>
-        <li>
-          <img src="./images/portfolio/online_courses.jpg" alt="online_courses"width="360px"
-          height="300px" />
-          <h3>Online Courses
-           </h3>
-          <p> Marketing</p>
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/online_courses.jpg"
+            alt="online_courses"
+            width="360px"
+            height="300px"
+          />
+          <h3>Online Courses</h3>
+          <p>Marketing</p>
         </li>
-        <li>
-          <img src="./images/portfolio/instagram_stories_concept.jpg" alt="instagram_stories_concept"width="360px"
-          height="300px" />
-          <h3>Instagram Stories Concept
-           </h3>
-          <p> Design</p>
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/instagram_stories_concept.jpg"
+            alt="instagram_stories_concept"
+            width="360px"
+            height="300px"
+          />
+          <h3>Instagram Stories Concept</h3>
+          <p>Design</p>
         </li>
-        <li>
-          <img src="./images/portfolio/organic_food.jpg" alt="organic_food"width="360px"
-          height="300px" />
-          <h3>Organic Food
-           </h3>
-          <p> Web Site</p>
+        <li class="portf-img-list">
+          <img class="portf-img"
+            src="./images/portfolio/organic_food.jpg"
+            alt="organic_food"
+            width="360px"
+            height="300px"
+          />
+          <h3>Organic Food</h3>
+          <p>Web Site</p>
         </li>
-        <li>
-          <img src="./images/portfolio/fresh _coffee.jpg" alt="fresh _coffee"width="360px"
-          height="300px" />
-          <h3>Fresh Coffee
-           </h3>
-          <p> Web Site</p>
+        <li class="portf-img-list">
+          <img  class="portf-img"
+            src="./images/portfolio/fresh _coffee.jpg"
+            alt="fresh _coffee"
+            width="360px"
+            height="300px"
+          />
+          <h3>Fresh Coffee</h3>
+          <p>Web Site</p>
         </li>
       </ul>
+    </div>
+      <!-- /* ____PORTFOLIO-IMG____ */ -->
+    </div>
     </main>
     <!-- ========/МЕЙН-ПОРТФОЛІО======== -->
 
@@ -158,15 +191,15 @@
                   ></use>
                 </svg>
               </a>
-            </li><li class="list-social-media">
+            </li>
+            <li class="list-social-media">
               <a href="" class="link-social-media">
                 <svg class="social-media-icon" width="24px" height="24px">
-                  <use
-                    href="./images/sprite-svg/symbol-defs.svg#twitter"
-                  ></use>
+                  <use href="./images/sprite-svg/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
-            </li><li class="list-social-media">
+            </li>
+            <li class="list-social-media">
               <a href="" class="link-social-media">
                 <svg class="social-media-icon" width="24px" height="24px">
                   <use
@@ -174,7 +207,8 @@
                   ></use>
                 </svg>
               </a>
-            </li><li class="list-social-media">
+            </li>
+            <li class="list-social-media">
               <a href="" class="link-social-media">
                 <svg class="social-media-icon" width="24px" height="24px">
                   <use
