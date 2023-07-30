@@ -465,7 +465,7 @@ body {
 /* =======================!!!!!!!!!======================= */
 
 /* <!-- ========МЕЙН-ПОРТФОЛІО======== --> */
-        /* ___FILTER____ */
+/* ___FILTER____ */
 .button-list {
   display: flex;
   justify-content: center;
@@ -491,27 +491,62 @@ body {
   background-color: var(--hover-focus-color);
 }
 
- /* ___/FILTER____ */
+/* ___/FILTER____ */
 
- /* ____PORTFOLIO-IMG____ */
+/* ____PORTFOLIO-IMG____ */
 
-.portf-list-conteiner{
+.portf-list-conteiner {
   width: 1128px;
+  margin-bottom: 120px;
 }
 
-.portf-list{
+.portf-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
 }
-
-
-.portf-img-list{
-  border: 1px solid var(--cornflower, #E7E9FC);
+.portf-img-list {
+  position: relative;
+  border: 1px solid #e7e9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 360px;
+  height: 420px;
+  background: #fff;
 }
 
-   /* ____/PORTFOLIO-IMG____ */
+.portf-list-link {
+  display: flex;
+  flex-direction: column;
+}
 
+.portf-img {
+  position: relative;
+  bottom: 1px;
+  right: 1px;
+}
+
+.subinfo {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 16px;
+  gap: 8px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #2e2f42;
+}
+
+.subtext {
+  color: #434455;
+}
+
+/* ____/PORTFOLIO-IMG____ */
 
 /* <!-- ========/МЕЙН-ПОРТФОЛІО======== --> */
