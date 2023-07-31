@@ -508,7 +508,7 @@ body {
 }
 .portf-img-list {
   position: relative;
-  border: 1px solid #e7e9fc;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -522,17 +522,49 @@ body {
   flex-direction: column;
 }
 
+.portf-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portf-img-list:focus .overlay,
+.portf-img-list:hover .overlay {
+  transform: translate(0, 0);
+}
+
 .portf-img {
   position: relative;
-  bottom: 1px;
-  right: 1px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f4f4fd;
+  background-color: var(--logo-btn-color);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  padding: 40px 32px 164px 32px;
+  line-height: 1.5;
+
+  transform: translate(0%, 100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subinfo {
   display: flex;
   flex-direction: column;
-  margin: 32px 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 32px;
   gap: 8px;
+  border: 1px solid #f4f4fd;
+  border-top: transparent;
 }
 
 .subtitle {
@@ -550,3 +582,46 @@ body {
 /* ____/PORTFOLIO-IMG____ */
 
 /* <!-- ========/МЕЙН-ПОРТФОЛІО======== --> */
+
+/* =========MODAL-WINDOW========= */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.is-hidden{
+
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.close-btn{
+  border-radius: 50%;
+  
+  
+}
+
+.close-icon{
+
+ fill: #2E2F42;
+
+}
+
+/* =========/MODAL-WINDOW========= */
