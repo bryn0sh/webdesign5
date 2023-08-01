@@ -26,7 +26,7 @@
           >
           <ul class="menu-list list">
             <li class="menu-list-item">
-              <a class="menu-link-item link" href="">Studio</a>
+              <a class="menu-link-item link" href="./index.html">Studio</a>
             </li>
             <li class="menu-list-item">
               <a class="menu-link-item link" href="./portfolio.html"
@@ -62,7 +62,9 @@
       <section class="hero">
         <div class="conteiner hero-conteiner">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="modal-btn" type="button">Order Service!</button>
+          <button class="modal-btn" type="button" data-modal-open>
+            Order Service!
+          </button>
         </div>
       </section>
       <!-- /HERO -->
@@ -464,16 +466,16 @@
     <!-- /ПІДВАЛ -->
 
     <!-- =========MODAL-WINDOW========= -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn">
+        <button class="close-btn" data-modal-close>
           <svg class="close-icon" width="8px" height="8px">
             <use href="./images/sprite-svg/symbol-defs.svg#close"></use>
           </svg>
         </button>
       </div>
     </div>
-    <script></script>
+    <script src="./js/modal.js"></script>
 
     <!-- =========MODAL-WINDOW========= -->
   </body>
